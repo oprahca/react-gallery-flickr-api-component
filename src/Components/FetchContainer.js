@@ -10,7 +10,7 @@ export default function FetchContainer(props) {
     const [ loading, setLoading ] = useState(true);
 
     useEffect(() => {
-        axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api_key}&text=${props.query}&size=q&per_page=16&format=json&nojsoncallback=1`)
+        axios.get(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api_key}&tags=${props.query}&content_type=1&is_getty=true&per_page=24&page=1&format=json&nojsoncallback=1`)
         .then(res => {
             setData(res.data.photos.photo);
             setLoading(false);

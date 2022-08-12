@@ -15,7 +15,7 @@ const App = () => (
     <div className="container">
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Airplane query='supercar' />} />
+        <Route exact path="/" element={<Airplane query='car' />} />
         <Route path="/search" element={<Search />} />
         <Route path="/Airplane" element={<Airplane query='airplane' />} />
         <Route path="/Train" element={<Train query='train' />} />
