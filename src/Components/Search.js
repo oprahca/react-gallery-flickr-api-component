@@ -31,7 +31,7 @@ export default function Search(props) {
         setQuery(text);
       })
       .catch((err) => console.log("Error: " + err));
-  });
+  }),[];
 
   return (
     <div>

@@ -16,7 +16,7 @@ export default function FetchContainer(props) {
             setLoading(false);
         })
         .catch(err => console.log('Error fetching and parsing data', err))
-    })
+    },[])
 
     return (
         <div id="result">
